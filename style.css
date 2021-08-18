@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body, html{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./imgs/miza.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    font-weight: bold;
+
+}
+
+.nav-links ul li a:hover {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.nav-links ul li ::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: #7b7ab3;
+    display: block;
+    margin: auto;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.nav-links ul li:hover ::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+}
+
+.text-box h1 {
+    font-size: 45px;
+    max-width: 90%;
+    margin: auto;
+    font-weight: 700;
+}
+
+.text-box p {
+    font-size: 14px;
+    margin: 10px 0 40px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: .9s;
+    -webkit-transition: .9s;
+    -moz-transition: .9s;
+    -ms-transition: .9s;
+    -o-transition: .9s;
+}
+
+.hero-btn:hover {
+    border: 1px solid #7b7ab3;
+    background-color: #7b7ab3;
+    cursor: pointer;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media (max-width: 729px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: #7b7ab3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/* ---------------------- translation----------------- */
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    color: #7b7ab3;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+p {
+    font-size: 14px;
+
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #EEE;
+
+}
+
+.course-col {
+    flex-basis: 31%;
+    background-color: #7b7ab3;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 729px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* ------------campus-------------- */
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #7b7ab3;
+}
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.campus-col img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    color: #7b7ab3;
+}
+
+.layer:hover {
+    background: rgba(44, 44, 44, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* --------------------facilities--------------------- */
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    color: #7b7ab3;
+
+}
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img {
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.facilities-col p {
+    padding: 0;
+    color: #7b7ab3;
+}
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #7b7ab3;
+}
+
+/* ---------------------testimonials------------ */
+.testimonials {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonials h1 {
+    color: #7b7ab3;
+}
+.testimonials .rad {
+    color: #7b7ab3;
+}
+
+.testimonial-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    background: #7b7ab3;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    color: white;
+}
+
+.testimonial-col img {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.testimonial-col p{
+    padding: 0;
+    text-align: left;
+    justify-content: center;
+}
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonial-col .fa {
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+.testimonial-col .rate{
+    text-align: start;
+}
+
+/* -------------------cta-------------------- */
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgs/contact-us.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width:729px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/* --------------footer --------- */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgs/miza.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .footer .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+    .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #55ACEE;
+    color: white;  
+  }
+  .fa-linkedin {
+    background: #55ACEE;
+    color: white;  
+  }
+
+  #navLinks {
+      position: absolute;
+  }
+
+  .open{
+    right: 0px;
+  }
+
+  .close{
+    right: -200px;
+  }
